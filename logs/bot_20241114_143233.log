@@ -1,0 +1,34 @@
+2024-11-14 14:32:33 - INFO - Запуск бота...
+2024-11-14 14:32:33 - INFO - База данных инициализирована
+2024-11-14 14:32:33 - INFO - AuthHandler инициализирован
+2024-11-14 14:32:33 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 14:32:33 - INFO - Добавление обработчика конверсации
+2024-11-14 14:32:33 - INFO - Запуск процесса поллинга
+2024-11-14 14:32:38 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 14:32:38 - DEBUG - Отправлено стартовое меню
+2024-11-14 14:32:42 - DEBUG - Начало регистрации для пользователя 6121074409
+2024-11-14 14:32:47 - DEBUG - Получено ФИО: Горбунов Дмитрий Викторович
+2024-11-14 14:32:50 - ERROR - Произошла ошибка: tuple index out of range
+2024-11-14 14:32:50 - ERROR - tuple index out of range
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\auth_handler.py", line 587, in handle_store_selection
+    store_text = f"{store[2]}" if store_id and store else "Не указан"
+                    ~~~~~^^^
+IndexError: tuple index out of range
+2024-11-14 14:33:10 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 14:33:10 - DEBUG - Отправлено стартовое меню
+2024-11-14 14:33:25 - DEBUG - Пользователь 6121074409 вышел из системы
+2024-11-14 14:33:25 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 14:33:25 - DEBUG - Отправлено стартовое меню

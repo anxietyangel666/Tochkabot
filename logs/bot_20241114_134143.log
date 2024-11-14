@@ -1,0 +1,32 @@
+2024-11-14 13:41:43 - INFO - Запуск бота...
+2024-11-14 13:41:43 - INFO - База данных инициализирована
+2024-11-14 13:41:43 - INFO - AuthHandler инициализирован
+2024-11-14 13:41:44 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 13:41:44 - INFO - Добавление обработчика конверсации
+2024-11-14 13:41:44 - INFO - Запуск процесса поллинга
+2024-11-14 13:41:52 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 13:41:52 - DEBUG - Отправлено стартовое меню
+2024-11-14 13:42:11 - ERROR - Произошла ошибка: no such column: hire_date
+2024-11-14 13:42:11 - ERROR - no such column: hire_date
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\auth_handler.py", line 239, in save_hire_date
+    self.db.update_hire_date(user_id, hire_date)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\database\db_handler.py", line 72, in update_hire_date
+    c.execute('UPDATE users SET hire_date = ? WHERE id = ?',
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             (hire_date, user_id))
+             ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: hire_date

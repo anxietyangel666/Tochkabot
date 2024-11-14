@@ -1,0 +1,11 @@
+2024-11-14 19:48:30 - INFO - Запуск бота...
+2024-11-14 19:48:30 - INFO - База данных инициализирована
+2024-11-14 19:48:30 - INFO - AuthHandler инициализирован
+2024-11-14 19:48:31 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 19:48:31 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'handle_schedule_creation'
+2024-11-14 19:48:31 - ERROR - 'AuthHandler' object has no attribute 'handle_schedule_creation'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 144, in main
+    MessageHandler(filters.TEXT & ~filters.COMMAND, auth_handler.handle_schedule_creation)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'handle_schedule_creation'

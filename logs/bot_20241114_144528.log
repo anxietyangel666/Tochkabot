@@ -1,0 +1,11 @@
+2024-11-14 14:45:28 - INFO - Запуск бота...
+2024-11-14 14:45:28 - INFO - База данных инициализирована
+2024-11-14 14:45:28 - INFO - AuthHandler инициализирован
+2024-11-14 14:45:29 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 14:45:29 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'show_administrators'
+2024-11-14 14:45:29 - ERROR - 'AuthHandler' object has no attribute 'show_administrators'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 93, in main
+    MessageHandler(filters.Regex('^👨‍💼 Администраторы$'), auth_handler.show_administrators),
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'show_administrators'

@@ -1,0 +1,60 @@
+2024-11-14 14:00:22 - INFO - Запуск бота...
+2024-11-14 14:00:22 - INFO - База данных инициализирована
+2024-11-14 14:00:22 - INFO - AuthHandler инициализирован
+2024-11-14 14:00:23 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 14:00:23 - INFO - Добавление обработчика конверсации
+2024-11-14 14:00:23 - INFO - Запуск процесса поллинга
+2024-11-14 14:00:29 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 14:00:29 - ERROR - Ошибка в функции start: KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+2024-11-14 14:00:29 - ERROR - KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\handlers\common_handler.py", line 12, in start
+    [KeyboardButton("🔐 Регистрация", resize_keyboard=True),
+     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+2024-11-14 14:00:29 - ERROR - Произошла ошибка: KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+2024-11-14 14:00:29 - ERROR - KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\common_handler.py", line 12, in start
+    [KeyboardButton("🔐 Регистрация", resize_keyboard=True),
+     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+2024-11-14 14:00:41 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 14:00:41 - ERROR - Ошибка в функции start: KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+2024-11-14 14:00:41 - ERROR - KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\handlers\common_handler.py", line 12, in start
+    [KeyboardButton("🔐 Регистрация", resize_keyboard=True),
+     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+2024-11-14 14:00:41 - ERROR - Произошла ошибка: KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+2024-11-14 14:00:41 - ERROR - KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\common_handler.py", line 12, in start
+    [KeyboardButton("🔐 Регистрация", resize_keyboard=True),
+     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: KeyboardButton.__init__() got an unexpected keyword argument 'resize_keyboard'

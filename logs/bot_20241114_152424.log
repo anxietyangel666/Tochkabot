@@ -1,0 +1,11 @@
+2024-11-14 15:24:24 - INFO - Запуск бота...
+2024-11-14 15:24:24 - INFO - База данных инициализирована
+2024-11-14 15:24:24 - INFO - AuthHandler инициализирован
+2024-11-14 15:24:25 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 15:24:25 - ERROR - Критическая ошибка при запуске бота: name 'EDIT_STORE' is not defined
+2024-11-14 15:24:25 - ERROR - name 'EDIT_STORE' is not defined
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 135, in main
+    EDIT_STORE: [
+    ^^^^^^^^^^
+NameError: name 'EDIT_STORE' is not defined. Did you mean: 'ADD_STORE'?

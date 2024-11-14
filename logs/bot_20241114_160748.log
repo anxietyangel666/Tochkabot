@@ -1,0 +1,11 @@
+2024-11-14 16:07:48 - INFO - Запуск бота...
+2024-11-14 16:07:48 - INFO - База данных инициализирована
+2024-11-14 16:07:48 - INFO - AuthHandler инициализирован
+2024-11-14 16:07:49 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 16:07:49 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'show_position_selection'
+2024-11-14 16:07:49 - ERROR - 'AuthHandler' object has no attribute 'show_position_selection'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 139, in main
+    MessageHandler(filters.Regex('^👔 Изменить должность$'), auth_handler.show_position_selection),
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'show_position_selection'. Did you mean: 'handle_position_selection'?

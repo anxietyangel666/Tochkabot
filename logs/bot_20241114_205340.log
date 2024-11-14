@@ -1,0 +1,36 @@
+2024-11-14 20:53:40 - INFO - Запуск бота...
+2024-11-14 20:53:40 - INFO - База данных инициализирована
+2024-11-14 20:53:40 - INFO - AuthHandler инициализирован
+2024-11-14 20:53:41 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 20:53:41 - INFO - Добавление обработчика конверсации
+2024-11-14 20:53:41 - INFO - Запуск процесса поллинга
+2024-11-14 20:53:44 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 20:53:44 - DEBUG - Отправлено стартовое меню
+2024-11-14 20:53:49 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 20:53:49 - DEBUG - Отправлено стартовое меню
+2024-11-14 20:53:57 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 20:53:58 - DEBUG - Отправлено стартовое меню
+2024-11-14 20:54:03 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 20:54:03 - DEBUG - Отправлено стартовое меню
+2024-11-14 20:54:25 - ERROR - Произошла ошибка: no such table: stores
+2024-11-14 20:54:25 - ERROR - no such table: stores
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\auth_handler.py", line 992, in handle_store_auth
+    store = self.db.get_store_by_id(store_id)
+  File "C:\Users\anxiety\.cursor-tutor\database\db_handler.py", line 217, in get_store_by_id
+    c.execute('SELECT id, store_number, address FROM stores WHERE id = ?', (store_id,))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: stores
+2024-11-14 20:54:52 - INFO - Бот остановлен пользователем

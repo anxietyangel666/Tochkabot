@@ -1,0 +1,47 @@
+2024-11-14 15:19:07 - INFO - Запуск бота...
+2024-11-14 15:19:07 - INFO - База данных инициализирована
+2024-11-14 15:19:07 - INFO - AuthHandler инициализирован
+2024-11-14 15:19:08 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 15:19:08 - INFO - Добавление обработчика конверсации
+2024-11-14 15:19:08 - INFO - Запуск процесса поллинга
+2024-11-14 15:19:11 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 15:19:11 - DEBUG - Отправлено стартовое меню
+2024-11-14 15:19:15 - DEBUG - Получен штрих-код: 80004370
+2024-11-14 15:19:26 - ERROR - Произошла ошибка: AuthHandler.show_menu() takes 3 positional arguments but 4 were given
+2024-11-14 15:19:26 - ERROR - AuthHandler.show_menu() takes 3 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\auth_handler.py", line 182, in save_new_barcode
+    return await self.show_menu(update, context, user_data)
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AuthHandler.show_menu() takes 3 positional arguments but 4 were given
+2024-11-14 15:19:48 - ERROR - Произошла ошибка: AuthHandler.show_menu() takes 3 positional arguments but 4 were given
+2024-11-14 15:19:48 - ERROR - AuthHandler.show_menu() takes 3 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\auth_handler.py", line 182, in save_new_barcode
+    return await self.show_menu(update, context, user_data)
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AuthHandler.show_menu() takes 3 positional arguments but 4 were given

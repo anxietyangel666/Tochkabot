@@ -1,0 +1,11 @@
+2024-11-14 19:34:10 - INFO - Запуск бота...
+2024-11-14 19:34:10 - INFO - База данных инициализирована
+2024-11-14 19:34:10 - INFO - AuthHandler инициализирован
+2024-11-14 19:34:11 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 19:34:11 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'create_schedule'
+2024-11-14 19:34:11 - ERROR - 'AuthHandler' object has no attribute 'create_schedule'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 151, in main
+    MessageHandler(filters.Regex('^➕ Создать график$'), auth_handler.create_schedule),
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'create_schedule'. Did you mean: 'save_schedule'?

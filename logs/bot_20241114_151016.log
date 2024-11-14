@@ -1,0 +1,11 @@
+2024-11-14 15:10:16 - INFO - Запуск бота...
+2024-11-14 15:10:16 - INFO - База данных инициализирована
+2024-11-14 15:10:16 - INFO - AuthHandler инициализирован
+2024-11-14 15:10:16 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 15:10:16 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'request_admin_rights'
+2024-11-14 15:10:16 - ERROR - 'AuthHandler' object has no attribute 'request_admin_rights'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 64, in main
+    MessageHandler(filters.Regex('^🔐 Получить права админа$'), auth_handler.request_admin_rights),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'request_admin_rights'. Did you mean: 'request_admin_code'?

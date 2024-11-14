@@ -1,0 +1,11 @@
+2024-11-14 14:45:13 - INFO - Запуск бота...
+2024-11-14 14:45:13 - INFO - База данных инициализирована
+2024-11-14 14:45:13 - INFO - AuthHandler инициализирован
+2024-11-14 14:45:14 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 14:45:14 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'show_stores_for_assignment'
+2024-11-14 14:45:14 - ERROR - 'AuthHandler' object has no attribute 'show_stores_for_assignment'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 126, in main
+    MessageHandler(filters.Regex('^🏪 Прикрепить магазины$'), auth_handler.show_stores_for_assignment),
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'show_stores_for_assignment'

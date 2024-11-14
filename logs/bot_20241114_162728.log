@@ -1,0 +1,11 @@
+2024-11-14 16:27:28 - INFO - Запуск бота...
+2024-11-14 16:27:28 - INFO - База данных инициализирована
+2024-11-14 16:27:28 - INFO - AuthHandler инициализирован
+2024-11-14 16:27:28 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 16:27:28 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'start_registration'
+2024-11-14 16:27:28 - ERROR - 'AuthHandler' object has no attribute 'start_registration'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 49, in main
+    MessageHandler(filters.Regex('^📝 Регистрация$'), auth_handler.start_registration),
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'start_registration'

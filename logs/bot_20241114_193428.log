@@ -1,0 +1,29 @@
+2024-11-14 19:34:28 - INFO - Запуск бота...
+2024-11-14 19:34:28 - INFO - База данных инициализирована
+2024-11-14 19:34:28 - INFO - AuthHandler инициализирован
+2024-11-14 19:34:29 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 19:34:29 - INFO - Добавление обработчика конверсации
+2024-11-14 19:34:29 - INFO - Запуск процесса поллинга
+2024-11-14 19:34:30 - DEBUG - Вызвана команда start пользователем 5104161932
+2024-11-14 19:34:30 - DEBUG - Отправлено стартовое меню
+2024-11-14 19:34:39 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 19:34:39 - DEBUG - Отправлено стартовое меню
+2024-11-14 19:34:45 - ERROR - Произошла ошибка: 'DatabaseHandler' object has no attribute 'get_user_substitutions'
+2024-11-14 19:34:45 - ERROR - 'DatabaseHandler' object has no attribute 'get_user_substitutions'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\auth_handler.py", line 1067, in view_schedule
+    substitutions = self.db.get_user_substitutions(user_id, current_month)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabaseHandler' object has no attribute 'get_user_substitutions'

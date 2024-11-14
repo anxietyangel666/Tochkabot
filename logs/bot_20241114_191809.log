@@ -1,0 +1,11 @@
+2024-11-14 19:18:09 - INFO - Запуск бота...
+2024-11-14 19:18:09 - INFO - База данных инициализирована
+2024-11-14 19:18:09 - INFO - AuthHandler инициализирован
+2024-11-14 19:18:10 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 19:18:10 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'start_add_substitution'
+2024-11-14 19:18:10 - ERROR - 'AuthHandler' object has no attribute 'start_add_substitution'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 152, in main
+    MessageHandler(filters.Regex('^🔄 Добавить подмену$'), auth_handler.start_add_substitution),
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'start_add_substitution'

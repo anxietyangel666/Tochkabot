@@ -1,0 +1,29 @@
+2024-11-14 14:53:26 - INFO - Запуск бота...
+2024-11-14 14:53:26 - INFO - База данных инициализирована
+2024-11-14 14:53:26 - INFO - AuthHandler инициализирован
+2024-11-14 14:53:27 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 14:53:27 - INFO - Добавление обработчика конверсации
+2024-11-14 14:53:27 - INFO - Запуск процесса поллинга
+2024-11-14 14:53:29 - DEBUG - Вызвана команда start пользователем 6121074409
+2024-11-14 14:53:29 - DEBUG - Отправлено стартовое меню
+2024-11-14 14:53:32 - DEBUG - Получен штрих-код: 80004370
+2024-11-14 14:53:32 - ERROR - Произошла ошибка: 'DatabaseHandler' object has no attribute 'get_user_id_by_barcode'
+2024-11-14 14:53:32 - ERROR - 'DatabaseHandler' object has no attribute 'get_user_id_by_barcode'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\conversationhandler.py", line 844, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        update, application, handler_check_result, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\anxiety\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anxiety\.cursor-tutor\handlers\auth_handler.py", line 246, in check_auth_barcode
+    user_id = self.db.get_user_id_by_barcode(barcode)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabaseHandler' object has no attribute 'get_user_id_by_barcode'. Did you mean: 'get_user_by_barcode'?
+2024-11-14 14:54:56 - INFO - Бот остановлен пользователем

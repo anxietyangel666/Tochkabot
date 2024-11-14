@@ -1,0 +1,11 @@
+2024-11-14 14:58:27 - INFO - Запуск бота...
+2024-11-14 14:58:27 - INFO - База данных инициализирована
+2024-11-14 14:58:27 - INFO - AuthHandler инициализирован
+2024-11-14 14:58:28 - INFO - Приложение создано с токеном: 7892353308...
+2024-11-14 14:58:28 - ERROR - Критическая ошибка при запуске бота: 'AuthHandler' object has no attribute 'start'
+2024-11-14 14:58:28 - ERROR - 'AuthHandler' object has no attribute 'start'
+Traceback (most recent call last):
+  File "C:\Users\anxiety\.cursor-tutor\main.py", line 46, in main
+    entry_points=[CommandHandler('start', auth_handler.start)],
+                                          ^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthHandler' object has no attribute 'start'
