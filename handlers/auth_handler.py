@@ -211,7 +211,7 @@ class AuthHandler:
         reply_keyboard = [['↩️ Назад']]
         await update.message.reply_text(
             'Пожалуйста, введите ваше ФИО:',
-            reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+            reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True, resize_keyboard=True)
         )
         return FULL_NAME
 
@@ -256,7 +256,7 @@ class AuthHandler:
         reply_keyboard = [['↩️ Назад']]
         await update.message.reply_text(
             'Пожалуйста, отсканируйте или введите ваш штрих-код:',
-            reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+            reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True, resize_keyboard=True)
         )
         return BARCODE_AUTH  # Новое состояние специально для авторизации
 
