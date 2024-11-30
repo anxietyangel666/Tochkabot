@@ -398,7 +398,7 @@ class AuthHandler:
                 await update.message.reply_text("Неверный номер сотрудника. Попробуйте еще раз:")
                 return SELECT_USER
         except ValueError:
-            await update.message.reply_text("Пжалуйста, введите число.")
+            await update.message.reply_text("Пожалуйста, введите число.")
             return SELECT_USER
 
     async def handle_position_selection(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
